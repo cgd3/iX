@@ -44,7 +44,8 @@ def game():
         if space[n] == "X" or space[n] == "O":
             print("\nSpace filled, try again." )
             first_player()
-        else: space[n] = "X"
+        else: 
+            space[n] = "X"
     
     def second_player():
         n = choose_space()
@@ -52,22 +53,21 @@ def game():
             print("\nSpace filled, try again." )
             second_player()
         else: 
-            board[n] = "O"
+            space[n] = "O"
     
     def choose_space():
-        while True: 
             while True: 
-                a = input()
+                value = input()
                 try: 
-                    a = int(a)
-                    a -= 1
-                    if a in range(0,9):
-                        return a
+                    value = int(value) - 1
+                    if -1 < value < len(space):
+                        return value
                     else:
                         print("\n Invalid space, try again.")
                         continue 
                 except ValueError:
                     print("\n Invalid space, try again.")
+                    continue
     
     def check_win():
         count = 0
@@ -98,9 +98,8 @@ def game():
             break
         print("Player 2 Turn")
         second_player()
-        print
+        print()
         
-    
 game()
     
 
