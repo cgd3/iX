@@ -1,4 +1,3 @@
-source:,http://www.disastercenter.com/crime/uscrime.htm
 Year,Population,Total,Violent,Property,Murder,Forcible-Rape,Robbery,Aggravated-assault,Burglary,Larcency-Theft,Vehicle-Theft
 1960,179323175,3384200,288460,3095700,9110,17190,107840,154320,912100,1855400,328200
 1961,182992000,3488000,289390,3198600,8740,17220,106670,156760,949600,1913000,336000
