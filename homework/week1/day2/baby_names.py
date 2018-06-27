@@ -35,20 +35,22 @@ def load_names():
    
     #create dictionaries to count names 
     boy_dictionary = Counter(boy_names)
-    girl_dictionary =Counter(girl_names)
-    print(boy_dictionary)
-    print(girl_dictionary)
+    girl_dictionary = Counter(girl_names)
+    #print(boy_dictionary)
+    #print(girl_dictionary)
     
     #accept name as argument 
     name_input = input("Insert your name").capitalize()
     
-    if name_input not in (girl_dictionary and boy_dictionary):
-        print("This name was most popular 0 times for boys and girls")
-    elif name_input in girl_dictionary:
+   
+    if name_input in girl_dictionary:
         print("This name was most popular {} time for girls and 0 times for boys".format(girl_dictionary[name_input]))
     elif name_input in boy_dictionary:
         print("This name was most popular 0 time for girls and {} times for boys".format(boy_dictionary[name_input]))
+    elif name_input not in (girl_dictionary and boy_dictionary):
+        print("This name was most popular 0 times for boys and girls")
     
+
 
 load_names()
             
