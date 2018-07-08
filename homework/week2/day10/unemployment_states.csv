@@ -1,0 +1,52 @@
+State,rate,rank
+Hawaii,2,1
+North Dakota,2.6,2
+Iowa,2.7,3
+New Hampshire,2.7,3
+Colorado,2.8,5
+Maine,2.8,5
+Nebraska,2.8,5
+Vermont,2.8,5
+Wisconsin,2.8,5
+Idaho,2.9,10
+Utah,3,11
+Minnesota,3.1,12
+Indiana,3.2,13
+Virginia,3.2,13
+South Dakota,3.3,15
+Kansas,3.4,16
+Massachusetts,3.5,17
+Tennessee,3.5,17
+Missouri,3.6,19
+Wyoming,3.7,20
+Arkansas,3.8,21
+Florida,3.8,21
+Alabama,3.9,23
+Montana,3.9,23
+Delaware,4,25
+Oklahoma,4,25
+South Carolina,4,25
+Kentucky,4.1,28
+Oregon,4.1,28
+Texas,4.1,28
+California,4.2,31
+Georgia,4.2,31
+Illinois,4.3,33
+Maryland,4.3,33
+North Carolina,4.3,33
+Ohio,4.3,33
+New Jersey,4.4,37
+Rhode Island,4.4,37
+Connecticut,4.5,39
+New York,4.5,39
+Pennsylvania,4.5,39
+Louisiana,4.6,42
+Michigan,4.6,42
+Arizona,4.7,44
+Mississippi,4.7,44
+Washington,4.7,44
+Nevada,4.8,47
+New Mexico,5.1,48
+West Virginia,5.4,49
+District of Columbia,5.6,50
+Alaska,7.2,51
