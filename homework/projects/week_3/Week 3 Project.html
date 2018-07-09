@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html><html><head>
+<base href="file:///storage/Backup/Proyectos/curso_ixperience/template.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><title>Week 3 Project</title>
+<link href="http://strapdownjs.com/v/0.2/themes/cerulean.min.css" rel="stylesheet"><link href="http://strapdownjs.com/v/0.2/strapdown.css" rel="stylesheet"><link href="http://strapdownjs.com/v/0.2/themes/bootstrap-responsive.min.css" rel="stylesheet">
+<link rel="icon" href="">
+
+<script id="savepage-pageloader" type="application/javascript">
+savepage_PageLoader(5);
+"use strict";function savepage_PageLoader(maxframedepth){var resourceMimeType=new Array();var resourceBase64Data=new Array();var resourceBlobUrl=new Array();window.addEventListener("DOMContentLoaded",function(a){createBlobURLs();replaceReferences(0,document.documentElement)},false);function createBlobURLs(){var i,j,binaryString,blobData;var a=new Array();for(i=0;i<resourceMimeType.length;i++){if(typeof resourceMimeType[i]!="undefined"){binaryString=atob(resourceBase64Data[i]);resourceBase64Data[i]="";a.length=0;for(j=0;j<binaryString.length;j++){a[j]=binaryString.charCodeAt(j)}blobData=new Blob([new Uint8Array(a)],{type:resourceMimeType[i]});resourceMimeType[i]="";resourceBlobUrl[i]=window.URL.createObjectURL(blobData)}}}function replaceReferences(a,b){var i,regex1,regex2,csstext,blobData;regex1=/url\(\s*((?:"[^"]+")|(?:'[^']+')|(?:[^\s)]+))\s*\)/gi;regex2=/data:[^;]*;resource=(\d+);base64,/i;if(b.hasAttribute("style")){csstext=b.style.cssText;b.style.cssText=csstext.replace(regex1,replaceCSSRef)}if(b.localName=="style"){csstext=b.textContent;b.textContent=csstext.replace(regex1,replaceCSSRef)}else if(b.localName=="link"&&(b.rel.toLowerCase()=="icon"||b.rel.toLowerCase()=="shortcut icon")){if(b.href!="")b.href=b.href.replace(regex2,replaceRef)}else if(b.localName=="body"){if(b.background!="")b.background=b.background.replace(regex2,replaceRef)}else if(b.localName=="img"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="input"&&b.type.toLowerCase()=="image"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="audio"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.load()}}else if(b.localName=="video"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.load()}if(b.poster!="")b.poster=b.poster.replace(regex2,replaceRef)}else if(b.localName=="source"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.parentElement.load()}}else if(b.localName=="track"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="object"){if(b.data!="")b.data=b.data.replace(regex2,replaceRef)}else if(b.localName=="embed"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}if(b.localName=="iframe"||b.localName=="frame"){if(a<maxframedepth){if(b.hasAttribute("data-savepage-sameorigin")){blobData=new Blob([decodeURIComponent(b.src.substr(29))],{type:"text/html;charset=utf-8"});b.onload=function(){try{if(b.contentDocument.documentElement!=null){replaceReferences(a+1,b.contentDocument.documentElement)}}catch(e){}};b.src=window.URL.createObjectURL(blobData)}}}else{for(i=0;i<b.children.length;i++)if(b.children[i]!=null)replaceReferences(a,b.children[i])}}function replaceCSSRef(a,b,c,d){var e=new Array();e=b.match(/data:[^;]*;resource=(\d+);base64,/i);if(e!=null)return"url("+resourceBlobUrl[+e[1]]+")";else return a}function replaceRef(a,b,c,d){return resourceBlobUrl[+b]}
+}
+</script>
+<meta name="savepage-url" content="file:///storage/Backup/Proyectos/curso_ixperience/template.html">
+<meta name="savepage-title" content="Week 3 Project">
+<meta name="savepage-date" content="Mon Jul 09 2018 14:57:44 GMT+0200 (CEST)">
+<meta name="savepage-state" content="Standard Items; Used page loader; Retained cross-origin frames; Removed unsaved URLs; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+<meta name="savepage-version" content="11.2">
+<meta name="savepage-comments" content="">
+</head><body style=""><div class="navbar navbar-fixed-top"><div class="navbar-inner"> <div class="container"> <div id="headline" class="brand">Week 3 Project</div> </div> </div></div><div class="container" id="content"><p>Week 3 Project - Data Wrangling</p>
+<p>Objective</p>
+<p>You just arrived at SuperBank, please read carefully the following letter you just received from your new CEO.</p>
+<pre><code class="prettyprint lang- prettyprinted" style=""><span class="typ">Hi</span><span class="pln"> </span><span class="typ">Data</span><span class="pln"> </span><span class="typ">Scientist</span><span class="pun">!</span><span class="pln">
+
+</span><span class="typ">Welcome</span><span class="pln"> to </span><span class="typ">SuperBank</span><span class="pun">!</span><span class="pln"> </span><span class="typ">We</span><span class="pln"> aim to become a data</span><span class="pun">-</span><span class="pln">driven institution so we decided that having someone like you exploring the type </span><span class="kwd">and</span><span class="pln"> quality of data we have </span><span class="kwd">in</span><span class="pun">-</span><span class="pln">house would be a great idea</span><span class="pun">.</span><span class="pln"> </span><span class="typ">If</span><span class="pln"> we could extract some value </span><span class="kwd">out</span><span class="pln"> of it</span><span class="pun">,</span><span class="pln"> great</span><span class="pun">!</span><span class="pln">
+
+</span><span class="typ">But</span><span class="pln"> what </span><span class="kwd">is</span><span class="pln"> </span><span class="pun">*</span><span class="str">"value"</span><span class="pun">*</span><span class="pln"> here</span><span class="pun">?</span><span class="pln"> </span><span class="typ">Our</span><span class="pln"> objective </span><span class="kwd">is</span><span class="pln"> that you help us decide which are the best people to whom we should provide loans</span><span class="pun">.</span><span class="pln"> </span><span class="typ">In</span><span class="pln"> essence</span><span class="pun">:</span><span class="pln">
+
+</span><span class="pun">**</span><span class="typ">Can</span><span class="pln"> you predict how capable each applicant </span><span class="kwd">is</span><span class="pln"> of repaying a loan</span><span class="pun">?**</span><span class="pln">
+
+I think they call </span><span class="kwd">this</span><span class="pln"> </span><span class="pun">*</span><span class="str">"binary classification"</span><span class="pun">*.</span><span class="pln">
+
+</span><span class="typ">We</span><span class="pln"> are all </span><span class="kwd">in</span><span class="pln"> a big of a hurry</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">as</span><span class="pln"> always</span><span class="pun">,</span><span class="pln"> so I give you </span><span class="lit">5</span><span class="pln"> days to have a sense on what we have</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Since</span><span class="pln"> I</span><span class="pun">â€™</span><span class="pln">m the CEO</span><span class="pun">,</span><span class="pln"> I managed to </span><span class="kwd">get</span><span class="pln"> the information </span><span class="kwd">from</span><span class="pln"> all departments</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Believe</span><span class="pln"> me</span><span class="pun">â€¦</span><span class="pln"> </span><span class="typ">If</span><span class="pln"> it were you</span><span class="pun">,</span><span class="pln"> I think you wouldn</span><span class="pun">â€™</span><span class="pln">t have been able to </span><span class="kwd">do</span><span class="pln"> that</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Well</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> the </span><span class="kwd">end</span><span class="pln"> you would manage to </span><span class="kwd">do</span><span class="pln"> it since it </span><span class="kwd">is</span><span class="pln"> part of your job to be transversal to all company</span><span class="pun">.</span><span class="pln">
+
+</span><span class="typ">Regarding</span><span class="pln"> the data I managed to </span><span class="kwd">get</span><span class="pun">â€¦</span><span class="pln"> </span><span class="typ">We</span><span class="pln"> are a big organization </span><span class="kwd">and</span><span class="pln"> we actually don</span><span class="pun">â€™</span><span class="pln">t have a clue that one should ever have an organized database</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Which</span><span class="pln"> would be the reason to </span><span class="kwd">do</span><span class="pln"> that</span><span class="pun">?</span><span class="pln"> </span><span class="typ">Life</span><span class="pln"> already has too many problems</span><span class="pun">.</span><span class="pln"> </span><span class="typ">You</span><span class="pln"> might find that the data comes </span><span class="kwd">in</span><span class="pln"> different formats</span><span class="pun">.</span><span class="pln"> I feel that the departments should have worked a bit harder to help you </span><span class="kwd">out</span><span class="pun">,</span><span class="pln"> but I think they still don</span><span class="pun">â€™</span><span class="pln">t believe you will be able to </span><span class="kwd">get</span><span class="pln"> something </span><span class="kwd">out</span><span class="pln"> of it</span><span class="pun">.</span><span class="pln">
+
+</span><span class="typ">Best</span><span class="pln"> of luck</span><span class="pun">,</span><span class="pln">
+</span><span class="typ">Your</span><span class="pln"> CEO</span></code></pre>
+<h2>Tasks</h2>
+<p>In the data directory youâ€™ll find many files with precious data for this hackathon. Read them and clean them.</p>
+<p>Call the API to get more data.</p>
+<p>Explore the SQL database to get even more data.</p>
+<p>Merge all the data you can. </p>
+<p>Each portion of data you find contains a number of columns (features) that you can use in your modelling stage.
+The target is in the SQL database (column <code class="prettyprint lang- prettyprinted" style=""><span class="pln">target</span></code>, table <code class="prettyprint lang- prettyprinted" style=""><span class="pln">credit_risk_target</span></code>). You will find the values:</p>
+<pre><code class="prettyprint lang- prettyprinted" style=""><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Training</span><span class="pln"> </span><span class="kwd">set</span><span class="pln"> </span><span class="pun">(</span><span class="lit">0</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> non</span><span class="pun">-</span><span class="kwd">default</span><span class="pun">;</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">default</span><span class="pun">)</span><span class="pln">
+NULL </span><span class="pun">(</span><span class="pln">missing value</span><span class="pun">):</span><span class="pln"> </span><span class="typ">Test</span><span class="pln"> </span><span class="kwd">set</span><span class="pun">.</span><span class="pln"> </span><span class="typ">You</span><span class="pln"> will be evaluated </span><span class="kwd">by</span><span class="pln"> predicting on these observations</span><span class="pun">.</span></code></pre>
+<h2>Submission</h2>
+<p>We will have our own private leaderboard for the competition.
+We are going to have teams of 4 assigned at random.</p>
+<p>To register your team, one of you needs to provide:</p>
+<ul>
+<li>Team Name (needs to be unique, so dont choose the same name as an existing team)</li>
+<li>Team Members</li>
+<li>Team gif (a gif to show on the leaderboard)</li>
+</ul>
+<p>You have to submit a csv file in the leaderboard, with two columns:
+<code class="prettyprint lang- prettyprinted" style=""><span class="pln">SK_ID_CURR</span></code>: simply the Test dataset SK_ID_CURR column (the ones that you found as NULL in SQL table <code class="prettyprint lang- prettyprinted" style=""><span class="pln">credit_risk_target</span></code>).
+<code class="prettyprint lang- prettyprinted" style=""><span class="pln">TARGET</span></code> is the probability that a person will default (e.g., output of predict_proba). Sometimes it is not exactly <em>"probability"</em>, but it is ok if the ranking order is correct among all observations.</p>
+<p>So the submission file will look like:</p>
+<pre><code class="prettyprint lang- prettyprinted" style=""><span class="pln">SK_ID_CURR</span><span class="pun">,</span><span class="pln">TARGET
+</span><span class="lit">100001</span><span class="pun">,</span><span class="lit">0.00111</span><span class="pln">
+</span><span class="lit">100002</span><span class="pun">,</span><span class="lit">0.93232</span><span class="pln">
+</span><span class="pun">...</span></code></pre>
+<p>You have a maximum number of submissions: 10, to avoid just trying to beat the game at random.
+In the end, youâ€™ll have to do a presentation to show us your findings</p>
+<p>Remember: the more data you manage to get, the better. You might never know if the next dataset will truly help you get to a great performance result. However, there will be a moment in time where you will have to put everything in a pipeline (at least we recommend it), so donâ€™t underestimate that effort. There is no need to use all the data to get decent results.</p>
+<h2>Connecting to the SQL database</h2>
+<p>We have a database where we have additional features plus the TARGET variable. It is a sqlite database named <code class="prettyprint lang- prettyprinted" style=""><span class="pln">datawrangling</span><span class="pun">.</span><span class="pln">db</span></code> located in the data folder. You can interact with it using dbeaver, the <code class="prettyprint lang- prettyprinted" style=""><span class="pln">sqlite</span></code> command line utility or with the package <code class="prettyprint lang- prettyprinted" style=""><span class="pln">sqlite3</span></code> in python.
+<a href="https://www.dataquest.io/blog/python-pandas-databases/">Here</a> is an article that might be useful.</p>
+<p>Explore the tables to find out how you can get the targets and the data.</p>
+<h2>Querying the API</h2>
+<p>You can get even more data from our API.
+Here you can find a small documentation, that shows you the available endpoints.</p>
+<p>The steps for you to get your data using the API are the following:
+The root URL is <code class="prettyprint lang- prettyprinted" style=""><span class="pln">http</span><span class="pun">:</span><span class="com">//35.180.129.212:8001</span></code>, this means that when you do a GET request to the API, the URL will always look like: <code class="prettyprint lang- prettyprinted" style=""><span class="pln">http</span><span class="pun">:</span><span class="com">//35.180.129.212:8001/docs/blabla</span></code> (where blabla should obviously be replaced with something else). You can check the API documentation at <code class="prettyprint lang- prettyprinted" style=""><span class="pln">http</span><span class="pun">:</span><span class="com">//35.180.129.212:8001/docs</span></code>.</p>
+<p>Call the token endpoint to get an authentication token. Here you should replace <em>blabla</em> with <em>api/token-auth</em> and send the query parameter username with value ixperience_student. This will give you a token for you to authenticate in the next request.</p>
+<p>Call the <code class="prettyprint lang- prettyprinted" style=""><span class="str">/api/</span><span class="pln">data</span></code> endpoint to get your data.</p>
+<p>This endpoint requires you to provide an authentication header. Check the docs of the Python requests library. The header name is Authorization and the value is token {here goes your token}. Example:</p>
+<pre><code class="prettyprint lang- prettyprinted" style=""><span class="pun">{</span><span class="str">"Authorization"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"token 235n7bf387n2f78h2f74ghr28f48"</span><span class="pun">}</span></code></pre>
+<p>Your data is not going to be given to you all at once. Because this would make the requests take a long time. So youâ€™ll have to use the <code class="prettyprint lang- prettyprinted" style=""><span class="pln">page</span></code> and <code class="prettyprint lang- prettyprinted" style=""><span class="pln">page_size</span></code> query parameters. The maximum allowed page_size is 2000. Do some test requests to see the response and understand how to get all the data.</p>
+<h2>Submitting your predictions to the leaderboard.</h2>
+<p>The leaderboard is located at <code class="prettyprint lang- prettyprinted" style=""><span class="pln">http</span><span class="pun">:</span><span class="com">//35.180.129.212:8000/</span></code>. You need to click on <em>Make a Submission</em>, then put in your Team key and upload your submission file.</p>
+<h2>Evaluation</h2>
+<p>Each team has to make a write up (google sheets or a blog post) to present their findings with the following guidelines, all properly justified:</p>
+<ul>
+<li>How you first faced the problem</li>
+<li>Which data sources were you able to use (files, database, api)</li>
+<li>What did you have to do to clean each file (brief summary with the main issues)</li>
+<li>How did you handle missing data or other problems (also briefly)</li>
+<li>What methods did you use to predict credit default (models, pipelines, etc.) Charts/tables/great visuals are encouraged and explain what for</li>
+<li>Recommendations / Future work if you had more time to work on it</li>
+</ul>
+<p>The final score is calculated as:</p>
+<p>FinalScore=0.5AUROC+0.5Presentation</p>
+<p>Where:
+AUROC partial-score is the Area Under the Receiver Operating Curve (the best submission is considered) [ranked]
+Presentation partial-score includes the evaluation of the presentation points discussed above [ranked]</p>
+</div>
+<script data-savepage-src="http://strapdownjs.com/v/0.2/strapdown.js" src=""></script>
+
+</body></html>
